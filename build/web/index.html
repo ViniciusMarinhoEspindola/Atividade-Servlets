@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Index - JavaServlets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>   
+            h1, h2 {
+                font-family: Verdana;
+            }
+            .content {
+                max-width: 450px;
+            }
+            ul {
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;               
+            }            
+            ul li {
+                border: 1px solid red;
+                text-align: center;                
+                background: white;
+                padding: 5px;
+            }
+            ul li a{
+                text-decoration: none;
+                font-family: verdana;
+                font-size: 14px;
+                color: red;
+            }
+            form {
+                background: white;
+                border: 2px solid black;                
+                font-size: 20px;                
+                padding: 12px;
+                padding-top: 5px;                 
+            }
+            
+            form h3 {                
+                font-size: 20px;
+                text-align: center;
+                font-family: Verdana;
+            }
+            form input {
+                padding: 5px;
+                width: 120px;
+            }
+            
+            form button {
+                background: black;
+                color: white;
+                border: 1px solid black;                
+                padding: 5px;
+                width: 120px;
+                cursor: pointer;
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tarefas JavaServlets</h1>
+        <div class="content">        
+            <h2>Links</h2>
+
+            <ul>
+                <li><a href="nome">Meu Nome</a></li>
+                <li><a href="data">Data/Hora do servidor</a></li>
+                <li><a href="mensagem">GreetingServlet</a></li>
+            </ul>
+
+            <h2>Formulário</h2>
+            
+            <form action="calcular" method="POST">
+                <h3>Fazer conta de menos</h3>
+                <input type="text" name="n1"> - 
+                <input type="text" name="n2">
+
+                <button type="submit">Calcular</button> 
+            </form>
+        </div>
+    </body>
+</html>
